@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Cecil Ewusie">
+        <meta name="description" content="WDD 231 and Web Frontend Development I">
+        <title>WDD 231 - Web Frontend Development I - Cecil Ewusie</title>
+
+        <!-- external style links -->
+        <link rel="stylesheet" href="styles/mobileview.css">
+        <link rel="stylesheet" href="styles/desktopview.css">
+
+        <!-- external javascript -->
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/course-homepage.js" defer></script>
+        <script src="scripts/course-info.js" defer></script>
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">      
+    </head>
 <body>
-    <h1>hello world</h1>
+    <header>
+        <div>
+            <img src="" alt="picture of me">
+            <h1>Cecil Ewusie</h1>
+        </div>
+        <button class="menu" type="button" title="hamburger menu"></button>
+        <nav id="header-nav">
+            <ul>
+                <li><a href="#home" target="_blank">Home</a></li>
+                <li><a href="#Chamber" target="_blank">Chamber</a></li>
+                <li><a href="#Github Profile" target="_blank">Github Profile</a></li>
+                <li><a href="#linkedIn" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- container for all contents -->
+        <div>
+            <!-- first container for course information -->
+            <section id="section-one">
+                <h2>Course Work</h2>
+                <nav>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </nav>
+            </section>
+            <!-- second container for the country information -->
+            <section id="section-two">
+                <h2>Cape Coast, Ghana</h2>
+                <figure>
+                    <img src="" alt="picture of kakum" loading="lazy">
+                    <figcaption>Kakum National Park</figcaption>
+                </figure>
+            </section>
+
+            <!-- third container for certificate information -->
+            <section id="section-three">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="nav-buttons">
+                    <button type="button">ALL</button>
+                    <button type="button">CSE</button>
+                    <button type="button">WDD</button>
+                </div>
+                <div class="nav-content"></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span></p>
+        <p>🤍Cecil Kweku Ewusie🤍</p>
+        <div>
+            <p>Ghana</p>
+            <img src="" alt="ghana flag">
+        </div>
+        <p id="date-modified"></p>
+    </footer>
 </body>
 </html>

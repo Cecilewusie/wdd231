@@ -1,0 +1,120 @@
+/* mobile view */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general body styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+:root {
+    --primary-color: rgb(95, 71, 26); 
+}
+
+header, h2, footer {
+    background-color: var(--primary-color);
+}
+
+section h2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+section {
+    margin: 3rem;
+}
+
+/* header styling */
+header {
+    padding: 1em;
+}
+
+header div {
+    display: flex;
+    gap: 2em;
+    flex-direction: row;
+}
+
+header nav ul {
+    background-color: burlywood;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    text-align: center;
+}
+
+header nav ul a {
+    display: none;
+    color: black;
+    padding: 0.5rem 0.2rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+header nav ul li:hover {
+    background-color: black;
+    transition: 0.5s;
+    transform: scale(1.05);
+    border-radius: 8px;
+}
+
+header nav a:hover, header nav a:focus, header nav a:active {
+    text-decoration: overline;
+    text-decoration-color: brown;
+    color: #fff;
+}
+
+/* styling the hamburger menu */
+
+.menu {
+    font-size: 1.5rem;
+    color: #fff;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    cursor: pointer;
+}
+
+.menu::before {
+    content: "☰";
+}
+
+.show.menu::before {
+    content: "X";
+}
+
+.show a {
+    display: block;
+}
+
+.active {
+    color: var(--primary-color);
+}
+
+/* styling the course section */
+#section-three .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid grey 2px;
+}
+
+#section-three .nav-buttons button {
+    padding: 0.4rem 2.8rem;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(63, 11, 11);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
