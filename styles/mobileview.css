@@ -102,6 +102,12 @@ header nav a:hover, header nav a:focus, header nav a:active {
     color: var(--primary-color);
 }
 
+/* styling section one */
+#section-one nav a {
+    color: black;
+    text-align: center;
+}
+
 /* styling the section two */
 figure {
     display: flex;
