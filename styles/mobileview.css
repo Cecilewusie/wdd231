@@ -105,7 +105,9 @@ header nav a:hover, header nav a:focus, header nav a:active {
 /* styling section one */
 #section-one nav a {
     color: black;
-    text-align: center;
+    padding-left: 30px ;
+    line-height: 1.5em;
+    padding-top: 10px;
 }
 
 /* styling the section two */
