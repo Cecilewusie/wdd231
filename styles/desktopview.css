@@ -41,17 +41,18 @@
     
     #section-one {
         grid-column: 1 / 2;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     #section-two {
         grid-column: 2 / 3;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     #section-three {
         grid-column: span 2;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #section-one, #section-two, #section-three {
+        box-shadow: var(--box-shadow);
     }
 
     #section-three .nav-buttons {
