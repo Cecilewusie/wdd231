@@ -24,7 +24,7 @@
 <body>
     <header>
         <div>
-            <img src="" alt="picture of me">
+            <img src="images/cecil.webp" alt="picture of me" width="50" loading="lazy">
             <h1>Cecil Ewusie</h1>
         </div>
         <button class="menu" type="button" title="hamburger menu"></button>
@@ -39,15 +39,15 @@
     </header>
     <main>
         <!-- container for all contents -->
-        <div>
+        <div id="overall-container">
             <!-- first container for course information -->
             <section id="section-one">
                 <h2>Course Work</h2>
                 <nav>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
                     </ul>
                 </nav>
             </section>
@@ -55,7 +55,7 @@
             <section id="section-two">
                 <h2>Cape Coast, Ghana</h2>
                 <figure>
-                    <img src="" alt="picture of kakum" loading="lazy">
+                    <img src="images/kakum600X400.webp" alt="picture of kakum" loading="lazy">
                     <figcaption>Kakum National Park</figcaption>
                 </figure>
             </section>
@@ -64,20 +64,22 @@
             <section id="section-three">
                 <h2>Web and Computer Programming Certificate</h2>
                 <div class="nav-buttons">
-                    <button type="button">ALL</button>
-                    <button type="button">CSE</button>
-                    <button type="button">WDD</button>
+                    <button class="allOnly" type="button">All</button>
+                    <button class="cseOnly" type="button">CSE</button>
+                    <button class="wddOnly" type="button">WDD</button>
                 </div>
                 <div class="nav-content"></div>
             </section>
         </div>
     </main>
     <footer>
-        <p>&copy;<span id="currentyear"></span></p>
-        <p>🤍Cecil Kweku Ewusie🤍</p>
-        <div>
-            <p>Ghana</p>
-            <img src="" alt="ghana flag">
+        <div id="div-footer">
+            <p>&copy;<span id="currentyear"></span></p>
+            <p>🤍Cecil Kweku Ewusie🤍</p>
+            <div>
+                <p>Ghana</p>
+                <img src="images/ghanaflag.webp" alt="ghana flag" loading="lazy" width="80">
+            </div>
         </div>
         <p id="date-modified"></p>
     </footer>

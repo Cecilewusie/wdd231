@@ -77,3 +77,46 @@ const courses = [
         completed: false
     }
 ]
+
+//creating template function for course information
+function courseButtonsTemplate(course) {
+    if(course.completed === true) {
+        return `
+        <button class = "yesCompleted" type="button">☑️${course.subject} ${course.number}</button>
+        `;
+    } else {
+        return `
+        <button class = "notCompleted" type="button">${course.subject} ${course.number}</button>
+        `;
+    }
+}
+
+function createCourseButtons(coursesArray) {
+    const html = coursesArray.map(courseButtonsTemplate).join(" ");
+
+    //creating an array of credits from the courses and summing all up
+    const creditsArray = coursesArray.map(credit => credit.credits);
+    const numbOfCredits = creditsArray.reduce((accumulator, currentValue) => {
+        return accumulator + currentValue;
+    }, 0);
+    
+    let statements = `<p class = "statement">The total number of course credits listed below is ${numbOfCredits}</p>`;
+
+    document.querySelector(".nav-content").innerHTML = statements + html;
+}
+
+createCourseButtons(courses);
+
+function filteredCourseArray(SubjectCode) {
+    const filteredCourses = courses.filter(courseSubject => courseSubject.subject === SubjectCode);
+
+    createCourseButtons(filteredCourses)
+}
+
+const cse = document.querySelector(".cseOnly");
+const wdd = document.querySelector(".wddOnly");
+const all = document.querySelector(".allOnly")
+
+cse.addEventListener('click', () => filteredCourseArray("CSE"));
+wdd.addEventListener('click', () => filteredCourseArray("WDD"));
+all.addEventListener('click', () => createCourseButtons(courses));
