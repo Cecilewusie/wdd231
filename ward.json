@@ -1,0 +1,86 @@
+[
+    {
+        "family_name": "Ewusie",
+        "move_in_date": "2021-07-01",
+        "number_of_records": 5,
+        "is_visited_by_bishop": true,
+        "family_members": [
+            {
+                "member_name": "Charles Ewusie",
+                "gender": "male",
+                "birthdate": "11-11-1964"
+            },
+            {
+                "member_name": "Selina Ewusie",
+                "gender": "female",
+                "birthdate": "01-12-1970"
+            },
+            {
+                "member_name": "Belind Ewusie",
+                "gender": "female",
+                "birthdate": "27-10-1995"
+            },
+            {
+                "member_name": "Lisa Ewusie",
+                "gender": "female",
+                "birthdate": "21-08-2000"
+            },
+            {
+                "member_name": "Cecil Ewusie",
+                "gender": "male",
+                "birthdate": "29-10-1997"
+            }
+        ]
+    },
+    {
+        "family_name": "Boateng",
+        "move_in_date": "2021-07-02",
+        "number_of_records": 3,
+        "is_visited_by_bishop": false,
+        "family_members": [
+            {
+                "member_name": "John Boateng",
+                "gender": "male",
+                "birthdate": "15-05-1970"
+            },
+            {
+                "member_name": "Jane Boateng",
+                "gender": "female",
+                "birthdate": "20-07-1975"
+            },
+            {
+                "member_name": "Jimmy Boateng",
+                "gender": "male",
+                "birthdate": "10-10-2000"
+            }
+        ]
+    },
+    {
+        "family_name": "Mensah",
+        "move_in_date": "2021-07-03",
+        "number_of_records": 4,
+        "is_visited_by_bishop": true,
+        "family_members": [
+            {
+                "member_name": "Adam Mensah",
+                "gender": "male",
+                "birthdate": "01-01-1980"
+            },
+            {
+                "member_name": "Eve Mensah",
+                "gender": "female",
+                "birthdate": "02-02-1985"
+            },
+            {
+                "member_name": "Sam Mensah",
+                "gender": "male",
+                "birthdate": "03-03-2010"
+            },
+            {
+                "member_name": "Sara Mensah",
+                "gender": "female",
+                "birthdate": "04-04-2012"
+            }
+        ]
+    }
+]
