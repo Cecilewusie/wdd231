@@ -1,0 +1,41 @@
+@media screen and (min-width: 608px) {
+
+    /* styling the header */
+    header div.logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    header img {
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    header nav ul {
+        justify-content: space-around;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        list-style: none;
+        margin: 0 1rem;
+    }
+
+    header nav ul a {
+        display: flex;
+        flex: 1 1 100%;
+    }
+
+
+
+    
+}
