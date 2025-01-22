@@ -23,7 +23,7 @@
         justify-content: space-around;
         flex-direction: row;
         margin-top: 10px;
-    }
+    }    
 
     header nav ul li {
         list-style: none;
@@ -33,6 +33,7 @@
     header nav ul a {
         display: flex;
         flex: 1 1 100%;
+        justify-content: center;
     }
 
 
