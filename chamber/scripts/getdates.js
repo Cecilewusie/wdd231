@@ -14,6 +14,7 @@ function displayProjectInfo() {
 
     const dateModified = document.createElement("p");
     dateModified.innerHTML = `Last Modified:<span>${document.lastModified}</span>`;
+    dateModified.setAttribute("class", "last-modified");
 
     const project = document.querySelector(".class-project");
     project.appendChild(projectTitle);

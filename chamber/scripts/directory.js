@@ -1,6 +1,6 @@
 // humberger menu
 const hamburgerMenu = document.querySelector(".menu");
-const navB = document.querySelector("#header-nav")
+const navB = document.querySelector("#animatemenu");
 
 // adding event listners to hamburger menu
 hamburgerMenu.addEventListener('click', () => {
