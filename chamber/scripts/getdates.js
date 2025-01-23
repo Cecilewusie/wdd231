@@ -13,7 +13,7 @@ function displayProjectInfo() {
     copyRight.innerHTML = `&copy; <span>${todaysdates.getFullYear()}</span> Blacq Shot Chamber of Commerce`;
 
     const dateModified = document.createElement("p");
-    dateModified.innerHTML = `Last Modified:<span>${document.lastModified}</span>`;
+    dateModified.textContent = `Last Modified: ${document.lastModified}`;
     dateModified.setAttribute("class", "last-modified");
 
     const project = document.querySelector(".class-project");

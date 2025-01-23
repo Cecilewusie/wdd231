@@ -18,6 +18,11 @@
         grid-template-rows: 1fr;
     }
 
+    .last-modified {
+        margin-top: 0;
+        text-align: left;
+    }
+
     footer {
         display: flex;
         justify-content: space-around;
@@ -28,7 +33,6 @@
 
     footer div.organization-info, footer div.class-project {
         font-size: small;
-
     }
 
 

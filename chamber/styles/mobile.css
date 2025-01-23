@@ -18,8 +18,6 @@ body {
     color: #333;
 }
 
-
-
 /* Header styles */
 header {
     background-color: var(--background-color);
@@ -34,18 +32,18 @@ header {
 header img {
     object-fit: cover;
     border-radius: 10%;
-    margin-left: 1em;
-    margin-top: 1em;
+    margin-left: 1rem;
+    margin-top: 1rem;
 }
 
-header div.title-info {
+header .title-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: flex-start;
 }
 
-header div.title-info h1 {
+header .title-info h1 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     text-align: left;
@@ -63,13 +61,15 @@ nav {
 nav ul {
     overflow: hidden;
     gap: 1rem;
+    list-style-type: none;
+    padding: 0;
 }
 
 nav.show {
     grid-template-rows: 1fr;
 }
 
-/* styling the hamburger menu */
+/* Styling the hamburger menu */
 .menu::before {
     content: "=";
 }
@@ -82,7 +82,7 @@ nav.show {
     cursor: pointer;
     width: 100%;
     text-align: right;
-    padding: .25rem 2vw;
+    padding: 0.25rem 2vw;
 }
 
 ul.menuLinks li a {
@@ -92,7 +92,7 @@ ul.menuLinks li a {
     color: black;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 30%;
+    border-radius: 10px;
 }
 
 ul.menuLinks a:hover {
@@ -102,20 +102,12 @@ ul.menuLinks a:hover {
 }
 
 li.current-menu-item a {
-    background-color: rgb(0, 0, 0, 0.3);
-}
-
-ul.menuLinks {
-    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .menu.show::before {
     content: "x";
 }
-
-
-/* Main content styles */
-
 
 /* Footer styles */
 footer {
@@ -127,16 +119,16 @@ footer {
     width: 100%;
 }
 
-footer div.social-media ul {
+footer .social-media ul {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
     list-style-type: none;
+    padding: 0;
 }
 
-footer div.social-media ul li image {
+footer .social-media ul li img {
     object-fit: cover;
 }
 
@@ -147,12 +139,11 @@ footer div.social-media ul li image {
     margin-top: 1rem;
 }
 
-footer div.organization-info {
+footer .organization-info {
     font-size: 1rem;
     margin-top: 1rem;
 }
-footer div.organization-info p:first-child {
-    font-weight: 200;
-    font-size: large;
-    
+
+footer .organization-info p:first-child {
+    font-size: medium;
 }
