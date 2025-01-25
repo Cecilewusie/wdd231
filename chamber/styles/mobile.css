@@ -34,6 +34,8 @@ header img {
     border-radius: 10%;
     margin-left: 1rem;
     margin-top: 1rem;
+    width: 84px; /* Add explicit width */
+    height: auto; /* Maintain aspect ratio */
 }
 
 header .title-info {
@@ -41,6 +43,7 @@ header .title-info {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-left: 2em;
 }
 
 header .title-info h1 {
@@ -159,10 +162,12 @@ section {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-}
-
 #cards img {
     object-fit: cover;
+    border-radius: 10px;
+    width: 100%; /* Add explicit width */
+    height: auto; /* Maintain aspect ratio */
+}
     border-radius: 10px;
 }
 
