@@ -51,7 +51,7 @@ header .title-info h1 {
 
 /* Navigation styles */
 nav {
-    background-color: burlywood;
+    background-color: rgb(245, 212, 168);
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
