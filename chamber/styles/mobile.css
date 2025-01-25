@@ -117,6 +117,7 @@ main {
     text-align: center;
     color: black;
     font-family: Roboto, Helvetica, sans-serif;
+    min-height: calc(100vh - 200px); /* Adjust based on header and footer height */
 }
 
 section {
@@ -172,6 +173,22 @@ section {
 .membership {
     color: rgb(68, 10, 10);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer .social-media ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    list-style-type: none;
+    padding: 0;
+    min-height: 50px; /* Ensure minimum height to avoid layout shifts */
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    transition: margin 0.3s ease; /* Smooth transition to avoid layout shifts */
 }
 
 
