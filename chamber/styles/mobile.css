@@ -120,7 +120,7 @@ main {
     text-align: center;
     color: black;
     font-family: Roboto, Helvetica, sans-serif;
-    min-height: calc(100vh - 200px); /* Adjust based on header and footer height */
+    min-height: calc(100vh - 200px);
 }
 
 section {
@@ -134,7 +134,7 @@ section {
 
 #grid, #list {
     padding: 1rem;
-    font-weight: 700px;
+    font-weight: 700;
     margin-top: 1rem;
 }
 
@@ -157,17 +157,18 @@ section {
     margin-top: 2rem;
 }
 
-.grid img {
+/* .grid img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+} */
+
 #cards img {
     object-fit: cover;
     border-radius: 10px;
     width: 100%; /* Add explicit width */
     height: auto; /* Maintain aspect ratio */
-}
     border-radius: 10px;
 }
 
