@@ -23,6 +23,43 @@
         text-align: left;
     }
 
+    /* display grid in desktop view */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 5px;
+        align-items: center;
+    }
+    
+    /* displaying the list in desktop view as zebra stripes */
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 1rem;
+        border-radius: 10px;
+        margin: 0;
+    }
+
+    .list section > * {
+        margin: 0 1rem;
+    }
+
+    .list section img, .list section .goal, .list section .membership {
+        display: none;
+    }
+
+    .list section:nth-child(even) {
+        background-color: #b89d9d;
+    }
+    .list section:nth-child(odd) {
+        background-color: #505050;
+        color: #fff;
+    }
+
+    section h2 {
+        font-size: 1rem;
+    }
+
     footer {
         display: flex;
         justify-content: space-around;
