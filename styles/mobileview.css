@@ -158,6 +158,46 @@ figure {
     margin-bottom: 5px;
 }
 
+/* styling the weather information section */
+#section-four {
+    background-color: #fffbfb;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+#weather-pad {
+    padding: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#section-four h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#section-four p {
+    color: black;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+#section-four figure {
+    margin: 1rem 0;
+}
+
+#section-four img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#section-four figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: black;
+}
+
 .nav-content {
     display: grid;
     gap: 5px;
