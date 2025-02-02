@@ -172,7 +172,32 @@ section {
     border-radius: 10px;
 }
 
-.list section .goal, .grid section .goal {
+.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.list section > * {
+    margin: 0 1rem;
+    font-size: small;
+}
+
+.list section img, .list section .goal, .list section .membership {
+    display: none;
+}
+
+.list section:nth-child(even) {
+    background-color: #b89d9d;
+}
+.list section:nth-child(odd) {
+    background-color: #505050;
+    color: #fff;
+}
+
+.grid .goal {
     display: none;
 }
 

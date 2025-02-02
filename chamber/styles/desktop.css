@@ -42,6 +42,7 @@
 
     .list section > * {
         margin: 0 1rem;
+        font-size: inherit;
     }
 
     .list section img, .list section .goal, .list section .membership {
