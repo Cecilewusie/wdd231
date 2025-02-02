@@ -23,6 +23,7 @@
         text-align: left;
     }
 
+    /* ------STYLING IN THE DIRECTORY FILE------ */
     /* display grid in desktop view */
     .grid {
         display: grid;
@@ -59,6 +60,51 @@
 
     #section-from-derictory h2 {
         font-size: 1rem;
+    }
+
+    /* ------STYLING IN THE LANDING PAGE OR HOME PAGE FILE------ */
+    #call-to-action {
+        bottom: 10rem;
+        right: 4rem;
+        font-size: 2.5rem;
+    }
+
+    #landing-page-main {
+        max-width: 90%;
+        background-color: #f4f4f4;
+    }
+
+    #all-weather-info {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-around;
+    
+    }
+
+    #all-weather-info section {
+        flex: 1;
+    }
+
+    .spotlight-container {
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+    }
+
+    .spotlight-card {
+        flex: 1;
+        max-width: 400px;
+    }
+
+    .spotlight-info {
+        line-height: 1.6em;
+    }
+
+    .company-name p {
+        font-size: medium;
+        margin: 0;
     }
 
     footer {

@@ -219,7 +219,7 @@ li.current-menu-item a {
     min-height: calc(100vh - 200px);
 }
 
-#landing-page-main > section {
+#landing-page-main #section-from-home {
     margin: 1rem 0;
     padding: 0 0rem 2rem 0rem;
     /* box-shadow: var(--box-shadow);
@@ -227,15 +227,20 @@ li.current-menu-item a {
     line-height: 1.5em;
 }
 
+#content-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 .weather-container, .forecast-container, .event-container {
     background-color: #eeeaea;
 }
 
 .home {
-    text-align: left;
+    text-align: center;
 }
 
-#landing-page-main > section > h2 {
+#landing-page-main #section-from-home h2 {
     font-size: 1.5rem;
     margin: 1rem 0;
     background-color: #280538;
@@ -289,7 +294,7 @@ li.current-menu-item a {
 }
 
 /* styling the weather container */
-#landing-page-main > .weather-container > #weather-details-container {
+#landing-page-main #weather-details-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -323,7 +328,8 @@ li.current-menu-item a {
 }
 
 /* styling the spotlight container */
-.spotlight-card{
+
+.spotlight-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -340,6 +346,7 @@ li.current-menu-item a {
     max-width: 100%;
     height: auto;
     margin-bottom: 1rem;
+    object-fit: cover;
 }
 
 .spotlight-container .spotlight-content {
