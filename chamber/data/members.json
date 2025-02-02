@@ -6,7 +6,8 @@
         "website": "https://www.techinnovators.com",
         "image": "images/tech_innovators.webp",
         "membership_level": 3,
-        "description": "Leading the way in tech innovation."
+        "description": "Leading the way in tech innovation.",
+        "email": "infor@gmail.com"
     },
     {
         "name": "Green Energy Solutions",
@@ -15,7 +16,8 @@
         "website": "https://www.greenenergy.com",
         "image": "images/green_energy.webp",
         "membership_level": 2,
-        "description": "Providing sustainable energy solutions."
+        "description": "Providing sustainable energy solutions.",
+        "email": "infor@gmail.com"
     },
     {
         "name": "Healthy Living Co.",
@@ -24,7 +26,8 @@
         "website": "https://www.healthyliving.com",
         "image": "images/healthy_living.webp",
         "membership_level": 1,
-        "description": "Promoting a healthy lifestyle."
+        "description": "Promoting a healthy lifestyle.",
+        "email": "infor@gmail.com"
     },
     {
         "name": "EduTech Pioneers",
@@ -33,7 +36,8 @@
         "website": "https://www.edutechpioneers.com",
         "image": "images/edutech_pioneers.webp",
         "membership_level": 3,
-        "description": "Innovating education through technology."
+        "description": "Innovating education through technology.",
+        "email": "infor@gmail.com"
     },
     {
         "name": "Urban Developers",
@@ -42,7 +46,8 @@
         "website": "https://www.urbandevelopers.com",
         "image": "images/urban_developers.webp",
         "membership_level": 2,
-        "description": "Building the cities of tomorrow."
+        "description": "Building the cities of tomorrow.",
+        "email": "infor@gmail.com"
     },
     {
         "name": "FinTech Solutions",
@@ -51,7 +56,8 @@
         "website": "https://www.fintechsolutions.com",
         "image": "images/fintech_solutions.webp",
         "membership_level": 3,
-        "description": "Revolutionizing financial technology."
+        "description": "Revolutionizing financial technology.",
+        "email": "infor@gmail.com"
     },
     {
         "name": "Creative Media Agency",
@@ -60,6 +66,7 @@
         "website": "https://www.creativemedia.com",
         "image": "images/creative_media.webp",
         "membership_level": 1,
-        "description": "Bringing creativity to media."
+        "description": "Bringing creativity to media.",
+        "email": "infor@gmail.com"
     }
 ]

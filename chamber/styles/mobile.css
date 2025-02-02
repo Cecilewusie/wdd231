@@ -111,8 +111,9 @@ li.current-menu-item a {
     content: "x";
 }
 
+/* ----------------STYLING THE DIRECTORY MAIN----------------- */
 /* styling the main */
-main {
+#director-main {
     margin: 0 auto;
     padding: 1rem;
     max-width: 800px;
@@ -123,7 +124,7 @@ main {
     min-height: calc(100vh - 200px);
 }
 
-section {
+#section-from-derictory {
     margin: 1rem 0;
     padding: 2rem;
     border-radius: 10px;
@@ -145,7 +146,7 @@ section {
     align-items: center;
 }
 
-.grid section > * {
+.grid #section-from-derictory > * {
     margin: 0.5rem;
 }
 
@@ -167,12 +168,12 @@ section {
 #cards img {
     object-fit: cover;
     border-radius: 10px;
-    width: 100%; /* Add explicit width */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto; 
     border-radius: 10px;
 }
 
-.list section {
+.list #section-from-derictory {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 1rem;
@@ -180,19 +181,19 @@ section {
     margin: 0;
 }
 
-.list section > * {
+.list #section-from-derictory > * {
     margin: 0 1rem;
     font-size: small;
 }
 
-.list section img, .list section .goal, .list section .membership {
+.list #section-from-derictory img, .list #section-from-derictory .goal, .list #section-from-derictory .membership {
     display: none;
 }
 
-.list section:nth-child(even) {
+.list #section-from-derictory:nth-child(even) {
     background-color: #b89d9d;
 }
-.list section:nth-child(odd) {
+.list #section-from-derictory:nth-child(odd) {
     background-color: #505050;
     color: #fff;
 }
@@ -206,20 +207,166 @@ section {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-footer .social-media ul {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin: 1.5rem 0;
-    list-style-type: none;
-    padding: 0;
-    min-height: 50px; /* Ensure minimum height to avoid layout shifts */
+/* ---------- STYLING THE LANDING PAGE ---------------- */
+
+#landing-page-main {
+    margin: 0 auto;
+    padding: 0 1em 1em 1rem;
+    background-color: #fff;
+    text-align: center;
+    color: black;
+    font-family: Roboto, Helvetica, sans-serif;
+    min-height: calc(100vh - 200px);
 }
 
-h2 {
-    font-size: 2rem;
+#landing-page-main > section {
     margin: 1rem 0;
-    transition: margin 0.3s ease; /* Smooth transition to avoid layout shifts */
+    padding: 0 0rem 2rem 0rem;
+    /* box-shadow: var(--box-shadow);
+    background-color: #e9e6e6; */
+    line-height: 1.5em;
+}
+
+.weather-container, .forecast-container, .event-container {
+    background-color: #eeeaea;
+}
+
+.home {
+    text-align: left;
+}
+
+#landing-page-main > section > h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    background-color: #280538;
+    color: #fff;
+    padding: 0.5em;
+    text-align: center;
+}
+
+/* styling the hero container */
+#hero-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem 0;
+}
+
+#hero-container img {
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#call-to-action {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(94, 57, 9);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#call-to-action:hover {
+    background-color: rgb(112, 81, 39);
+    color: white;
+}
+
+/* styling the weather container */
+#landing-page-main > .weather-container > #weather-details-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.weather-info {
+    text-align: left;
+    line-height: 1.8rem;
+    padding-top: 1em;
+}
+
+#weather-details-container img {
+    width: 150px;
+    height: auto;
+}
+
+#weather-details-container figcaption, .weather-info p:first-child {
+    font-weight: bold;
+    font-size: large;
+}
+
+/* styling the weather forecast container */
+#landing-page-main .forecast-container #forecast-details-container {
+    line-height: 3rem;
+    font-size: large;
+}
+
+#forecast-details-container .degree {
+    font-weight: bolder;
+}
+
+/* styling the spotlight container */
+.spotlight-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: var(--box-shadow);
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.spotlight-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.spotlight-container .spotlight-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 1.8rem;
+    gap: 1em;
+    padding: 1em;
+}
+
+.spotlight-header {
+    border-bottom: 1px solid #333;
+    width: 100%;
+}
+
+.spotlight-info {
+    text-align: left;
+    line-height: 2.5rem;
+}
+
+.spotlight-info #quantifier {
+    font-weight: bolder;
+}
+
+.company-name p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
 }
 
 
@@ -239,6 +386,7 @@ footer .social-media ul {
     margin: 1.5rem 0;
     list-style-type: none;
     padding: 0;
+    min-height: 50px;
 }
 
 footer .social-media ul li img {

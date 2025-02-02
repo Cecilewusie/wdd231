@@ -33,6 +33,8 @@
     <!-- external javascript -->
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="../scripts/course-weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,14 +58,54 @@
             <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>    
-    <main id="director-main">
-        <h2>Chamber Directory</h2>
-        <p>Find local businesses and organizations that belong to the chamber of commerce.</p>
-        <div class="view-options">
-            <button id="grid" type="button">📱Grid</button>
-            <button id="list" type="button">📃List</button>
+    <main id="landing-page-main">
+        <!-- hero image -->
+        <div id="hero-container">
+            <img src="images/hero.webp" alt="hero images" loading="lazy">
+            <button type="button" id="call-to-action">Keynote ticket</button>
         </div>
-        <div id="cards"></div>
+        
+        <h2 class="home">Home</h2>
+
+        <!-- events information -->
+        <section class="event-container">
+            <h2>Events</h2>
+        </section>
+
+        <!-- current weather information -->
+        <section class="weather-container" id="section-from-home">
+            <h2>Current weather</h2>
+            <div id="weather-details-container">
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <div class="weather-info">
+                    <p><span id="current-temp"></span></p>
+                    <p><span id="wind-speed"></span></p>
+                    <p><span id="high-t"></span></p>
+                    <p><span id="low-t"></span></p>
+                    <p><span id="humidity"></span></p>
+                    <p><span id="sunrise-time"></span></p>
+                    <p><span id="sunset-time"></span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather forcast information -->
+        <section class="forecast-container">
+            <h2>Weather Forecast</h2>
+            <div id="forecast-details-container">
+                <div class="forecast-info">
+                    <p><span id="today-temperature"></span></p>
+                    <p><span id="day-two-forecast"></span></p>
+                    <p><span id="day-three-forecast"></span></p>
+                </div>
+        </section>
+
+        <!-- Businesses -->
+        <section class="spotlight-container" id="spotlight-container">
+        </section>
     </main>
     <footer>
         <div class="organization-info">

@@ -32,7 +32,7 @@
     }
     
     /* displaying the list in desktop view as zebra stripes */
-    .list section {
+    .list #section-from-derictory {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         padding: 1rem;
@@ -40,24 +40,24 @@
         margin: 0;
     }
 
-    .list section > * {
+    .list #section-from-derictory > * {
         margin: 0 1rem;
         font-size: inherit;
     }
 
-    .list section img, .list section .goal, .list section .membership {
+    .list #section-from-derictory img, .list #section-from-derictory .goal, .list #section-from-derictory .membership {
         display: none;
     }
 
-    .list section:nth-child(even) {
+    .list #section-from-derictory:nth-child(even) {
         background-color: #b89d9d;
     }
-    .list section:nth-child(odd) {
+    .list #section-from-derictory:nth-child(odd) {
         background-color: #505050;
         color: #fff;
     }
 
-    section h2 {
+    #section-from-derictory h2 {
         font-size: 1rem;
     }
 

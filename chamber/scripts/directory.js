@@ -62,6 +62,9 @@ function displayMembers(members) {
         description.setAttribute('class', 'goal');
         membershipLevel.setAttribute('class', 'membership');
 
+        // setting id attribute for card element
+        card.setAttribute('id', `section-from-derictory`);
+
 
         // append the heading and image elements to the section element
         card.appendChild(fullName);
