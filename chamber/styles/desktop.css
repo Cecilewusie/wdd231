@@ -67,6 +67,17 @@
         bottom: 10rem;
         right: 4rem;
         font-size: 2.5rem;
+        animation: animateButton 2s ease-in;
+    }
+
+    @keyframes animateButton {
+        from {
+            bottom: 2rem;
+        }
+        to {
+            bottom: 10rem;
+        }
+        
     }
 
     #landing-page-main {
