@@ -4,6 +4,7 @@ const weatherIcon = document.querySelector('#weather-icon');
 const caption = document.querySelector('figcaption');
 const humidity = document.querySelector('#humidity');
 const windSpeed = document.querySelector('#wind-speed');
+const figContainer = document.querySelector('#fig-container')
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=5.12&lon=-1.27&appid=c34f1644b22360a6f8033832fc6e3a40&units=metric';
 
 //additional weather information
@@ -30,9 +31,21 @@ async function apifetch() {
 function displayResult(data) {
     currentTemp.innerHTML = `${data.main.temp}&deg;C`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    caption.textContent = `${data.weather[0].description}`;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', data.weather[0].description);
+
+    // creating content for fig container
+    const figImage = document.createElement('img');
+    const figCaption = document.createElement('figcaption');
+
+    figCaption.textContent = `${data.weather[0].description}`;
+
+    figImage.setAttribute('src', iconsrc);
+    figImage.setAttribute('alt', data.weather[0].description);
+    figImage.setAttribute('id','weather-icon');
+
+    // adding figure information to fig container
+    figContainer.appendChild(figImage);
+    figContainer.appendChild(figCaption);
+
     humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
     windSpeed.innerHTML = `Wind Speed: ${data.wind.speed} m/s`;
 
