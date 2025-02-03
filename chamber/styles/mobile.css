@@ -219,11 +219,9 @@ li.current-menu-item a {
     min-height: calc(100vh - 200px);
 }
 
-#landing-page-main #section-from-home {
+#landing-page-main #weather-section, #event-section, #forecast-section {
     margin: 1rem 0;
     padding: 0 0rem 2rem 0rem;
-    /* box-shadow: var(--box-shadow);
-    background-color: #e9e6e6; */
     line-height: 1.5em;
 }
 
@@ -240,7 +238,7 @@ li.current-menu-item a {
     text-align: center;
 }
 
-#landing-page-main #section-from-home h2 {
+#landing-page-main #weather-section h2, #event-section h2, #forecast-section h2 {
     font-size: 1.5rem;
     margin: 1rem 0;
     background-color: #280538;
