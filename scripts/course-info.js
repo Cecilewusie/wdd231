@@ -82,11 +82,11 @@ const courses = [
 function courseButtonsTemplate(course) {
     if(course.completed === true) {
         return `
-        <button class = "yesCompleted" type="button">☑️${course.subject} ${course.number}</button>
+        <button class = "yesCompleted" id="represent" type="button">☑️${course.subject} ${course.number}</button>
         `;
     } else {
         return `
-        <button class = "notCompleted" type="button">${course.subject} ${course.number}</button>
+        <button class = "notCompleted" id="represent" type="button">${course.subject} ${course.number}</button>
         `;
     }
 }
@@ -103,6 +103,14 @@ function createCourseButtons(coursesArray) {
     let statements = `<p class = "statement">The total number of course credits listed below is ${numbOfCredits}</p>`;
 
     document.querySelector(".nav-content").innerHTML = statements + html;
+
+    // this code below makes sure the all dialogs open on click
+    // Adding 'click' event listener to each course button
+    document.querySelectorAll('#represent').forEach((button, index) => {
+        button.addEventListener('click', () => {
+            displayCourseDetails(coursesArray[index]);
+        });
+    });    
 }
 
 createCourseButtons(courses);
@@ -120,3 +128,51 @@ const all = document.querySelector(".allOnly")
 cse.addEventListener('click', () => filteredCourseArray("CSE"));
 wdd.addEventListener('click', () => filteredCourseArray("WDD"));
 all.addEventListener('click', () => createCourseButtons(courses));
+
+const courseDetails = document.querySelector("#course-details");
+
+// Function to display the modal with course details
+function displayCourseDetails(course) {
+    // Clear previous content
+    courseDetails.innerHTML = '';
+
+    // Create elements
+    const closeButton = document.createElement("button");
+    const subAndNumber = document.createElement("h2");
+    const title = document.createElement("h3");
+    const credit = document.createElement("p");
+    const certificate = document.createElement("p");
+    const description = document.createElement("p");
+    const technology = document.createElement("p");
+
+    // Assigning elements with appropriate attributes, textContent and innerHTML
+    closeButton.innerHTML = `<span>❌</span>`;
+    subAndNumber.textContent = `${course.subject} ${course.number}`;
+    title.textContent = `${course.title}`;
+    credit.textContent = `${course.credits} credits`;
+    certificate.innerHTML = `<strong>Certificate: </strong>${course.certificate}`;
+    description.textContent = `${course.description}`;
+    technology.innerHTML = `<strong>Technology:</strong> ${course.technology.join(', ')}`;
+
+    // Setting attributes and functionality
+    subAndNumber.setAttribute('class', 'subjectAndNumber');
+    description.setAttribute('class', 'course-description');
+    closeButton.setAttribute('class', 'close-button');
+    closeButton.addEventListener('click', () => {
+        courseDetails.close();
+    });
+
+    // Appending children
+    courseDetails.appendChild(closeButton);
+    courseDetails.appendChild(subAndNumber);
+    courseDetails.appendChild(title);
+    courseDetails.appendChild(credit);
+    courseDetails.appendChild(certificate);
+    courseDetails.appendChild(description);
+    courseDetails.appendChild(technology);
+
+    // Display the modal
+    courseDetails.showModal();
+}
+
+
