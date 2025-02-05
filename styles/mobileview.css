@@ -158,6 +158,7 @@ figure {
 /* styling the course section */
 #section-three .nav-buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: solid grey 2px;
 }
