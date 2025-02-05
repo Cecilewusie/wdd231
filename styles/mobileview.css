@@ -158,20 +158,23 @@ figure {
 /* styling the course section */
 #section-three .nav-buttons {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     border-bottom: solid grey 2px;
+    gap: 5px;
 }
 
 #section-three .nav-buttons button {
+    min-width: 80px;
+    max-width: 40%;
+    text-align: center;
     padding: 0.4em 2.8em;
     font-size: 1rem;
     color: white;
     background-color: rgb(95, 71, 26);
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* styling the weather information section */
