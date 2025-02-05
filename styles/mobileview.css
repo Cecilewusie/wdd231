@@ -237,9 +237,7 @@ dialog {
     line-height: 1.6rem;
     padding: 0 1rem 1rem 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 30rem;
-    left: 25rem;
+
 }
 
 .subjectAndNumber {

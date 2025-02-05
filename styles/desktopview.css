@@ -79,6 +79,11 @@
         text-align: center;
     }
 
+    dialog {
+        position: absolute;
+        top: 30rem;
+        left: 25rem;    
+    }
     #div-footer {
         display: flex;
         justify-content: space-evenly;
