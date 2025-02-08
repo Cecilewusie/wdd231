@@ -433,6 +433,7 @@ form {
     background-color: #f9f9f9;
     box-shadow: var(--box-shadow);
     border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 form label {
@@ -440,6 +441,7 @@ form label {
     font-size: 0.9rem;
     color: #280538;
     padding-top: 0.5rem;
+    animation: slideIn 0.5s ease-in-out;
 }
 
 form h3 {
@@ -465,6 +467,7 @@ form select {
     color: #333;
     width: 100%;
     max-width: 300px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 form input:required {
@@ -489,6 +492,27 @@ form input:required:valid {
     max-width: 300px;
     height: 100%;
     padding: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 #membership-level-card button:hover {
@@ -598,6 +622,15 @@ form input[type=submit]:hover {
 .gold-color:hover {
     background-color: #e6be00;
     color: #000;
+
+}
+
+.non-profit-color:hover,
+.bronze-color:hover,
+.silver-color:hover,
+.gold-color:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
 }
 
 #membership-level-card button {

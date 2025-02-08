@@ -124,6 +124,16 @@
         grid-template-columns: 1fr 2fr;
     }
 
+    #membership-level-card {
+        padding: 3.5rem;
+        border-radius: 0;
+
+    }
+
+    #membership-level-card section {
+        padding: 2rem;
+    }    
+
     footer {
         display: flex;
         justify-content: space-around;
