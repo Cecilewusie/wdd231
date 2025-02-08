@@ -1,9 +1,7 @@
 const currentUrl = window.location.href;
-console.log(currentUrl);
 
 // divide the url into two halves
 const everything = currentUrl.split('?');
-console.log(everything);
 
 //get the second part which is the relevant part
 const formData = everything[1].split('&');
