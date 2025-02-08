@@ -656,6 +656,7 @@ form input[type=submit]:hover {
     box-shadow: var(--box-shadow);
     width: 80%;
     max-width: 500px;
+    border: none;
     animation: fadeIn 0.5s ease-in-out;
 }
 
