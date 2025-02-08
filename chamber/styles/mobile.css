@@ -586,12 +586,12 @@ form input[type=submit]:hover {
 
 .non-profit-color {
     background-color: #d4edda;
-    color: #155724;
+    color: #000;
 }
 
 .bronze-color {
     background-color: #cd7f32;
-    color: #fff;
+    color: #000;
 }
 
 .silver-color {
@@ -611,7 +611,7 @@ form input[type=submit]:hover {
 
 .bronze-color:hover {
     background-color: #b87333;
-    color: #fff;
+    color: #000;
 }
 
 .silver-color:hover {
