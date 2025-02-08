@@ -12,7 +12,7 @@ console.log(formData);
 function show(cup) {
     formData.forEach(formParts => {
         if (formParts.startsWith(cup)) {
-            labelValue = formParts.split('=')[1].replace(/%\d+/i, '@').replace(/\+/g, " ").replace(/[A-Z]+\d+\@[A-Z]+\d+.+/g, "");
+            labelValue = formParts.split('=')[1].replace(/%\d+/i, '@').replace(/\+/g, " ").replace(/[A-Z]+\d+\@[A-Z]+\d+.+/g, "").replace(/\@D\%.+/g,"");
         }
     })
     return labelValue;
