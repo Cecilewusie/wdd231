@@ -118,6 +118,12 @@
         margin: 0;
     }
 
+    /* -------STYLING THE JOIN HTML IN DESKOP VIEW---- */
+    #join-main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
     footer {
         display: flex;
         justify-content: space-around;

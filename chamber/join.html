@@ -33,8 +33,7 @@
     <!-- external javascript -->
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <script src="../scripts/course-weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/member-level-info.js" defer></script>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,11 +59,12 @@
     </nav>        
     <main id="join-main">
         <form method="GET" action="thanks.html" class="designOne">
+            <h3>Fill the Form below to join us</h3>
             <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
             <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
             <label>Organizational Title <input type="text" name="org-title" title="Your Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}"></label>
-            <label>Email <input type="email" name="email" required placeholder="example@example.com" title="Your Email" autocomplete="email"></label>
-            <label>Mobile Phone <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234"></label>
+            <label>Email <input type="email" name="email" required placeholder="example@example.com" title="Your Email" autocomplete="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"></label>
+            <label>Mobile Phone <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" pattern="^(\d{3}-\d{3}-\d{4})$|\d{10}"></label>
             <label>Business/Organization Name <input type="text" name="organization" required autocomplete="organization" title="Your Business/Organization Name"></label>
             
             <h3>Membership Level</h3>
@@ -73,19 +73,20 @@
             <label><input type="radio" name="membership" value="Silver Membership"> Silver Membership</label>
             <label><input type="radio" name="membership" value="Gold Membership"> Gold Membership</label>
             
-            <label>Business/Organization Description <textarea name="description" title="Business/Organization Description"></textarea></label>
+            <label id="organization">Business/Organization Description <br><textarea name="description" title="Business/Organization Description"></textarea></label>
             
             <input type="hidden" name="timestamp" id="timestamp" value="">
             
-            <input type="submit" value="Join Now">
+            <input type="submit" value="Apply for Membership">
             
             <script>
                 document.getElementById('timestamp').value = new Date().toISOString();
             </script>
         </form>
-        <div >
-            <h2>membership Levels</h2>
+        <div id="member-info-container">
+            <h2>Membership Levels</h2>
             <div id="membership-level-card"></div>
+            <dialog class="members-dialog"></dialog>
         </div>
     </main>
     <footer>
