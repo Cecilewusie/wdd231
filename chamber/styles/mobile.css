@@ -651,7 +651,7 @@ form input[type=submit]:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    padding: 2rem;
+    padding: 0.1rem 2rem 2rem 2rem;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     width: 80%;
@@ -675,6 +675,7 @@ form input[type=submit]:hover {
     margin-top: 0;
     font-size: 1.5rem;
     color: var(--background-color);
+    padding: 0.5em;
 }
 
 .members-dialog p {
