@@ -85,7 +85,7 @@ function dialogTemplate(member) {
     return `    
                 <button type="button" class="close-button">❌</button>     
                 <h3>${member.type}</h3>
-                <p>With a monthly payment of $${member.cost} you get to enjoy these benefits</p>
+                <p>With a monthly payment of <span class="amount">$${member.cost}</span> you get to enjoy these benefits</p>
                 <ul class="benefits"> ${member.benefits.map(element => {
                     return `<li>➡️${element}</li>`;
                 }).join("")}</ul>               
