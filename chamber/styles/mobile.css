@@ -759,6 +759,7 @@ form input[type=submit]:hover {
     width: 100%;
     grid-area: image;
     border-bottom: 1px solid #ddd;
+    object-fit: cover;
 }
 
 #interest-container #interest-card p {
