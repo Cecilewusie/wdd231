@@ -22,7 +22,7 @@ function interestTemplate(interest) {
     return `
         <div id="interest-card">
             <figure>
-                <img src="${interest.photo}" alt="${interest.name}">
+                <img src="${interest.photo}" alt="${interest.name} loading="lazy">
             </figure>
             <h2>${interest.name}</h2>
             <address>${interest.address}</address>
