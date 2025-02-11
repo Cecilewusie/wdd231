@@ -707,6 +707,10 @@ form input[type=submit]:hover {
 
 /* ---STYLING THE DISCOVER PAGE---- */
 /* styling the interest card */
+#interest-container {
+    padding: 1rem;
+}
+
 #disc-h2 {
     text-align: center;
     font-size: 2rem;

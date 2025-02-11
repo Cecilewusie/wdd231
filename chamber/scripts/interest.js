@@ -11,15 +11,15 @@ displayInterestInfo();
 
 function interestTemplate(interest) {
     return `
-        <div id="interest-card">
+        <section id="interest-card">
             <figure>
-                <img src="${interest.photo}" alt="${interest.name}" width="300" height="200" loading="lazy">
+                <img src="${interest.photo}" alt="${interest.name}" width="300" height="200">
             </figure>
             <h2>${interest.name}</h2>
             <address>${interest.address}</address>
             <p>${interest.description}</p>
             <button type="button">Learn More</button>
-        </div>
+        </section>
     `;
 }
 const sidebar = document.querySelector("#sidebar-content");

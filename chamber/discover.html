@@ -25,10 +25,13 @@
     <meta name="twitter:image" content="https://cecilewusie.github.io/wdd231/chamber/images/market.webp">
 
     <!-- external style links -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/mobile.css">
-    <link rel="stylesheet" href="styles/desktop.css">
-    <link rel="stylesheet" href="styles/xtra-large.css">
+    <link rel="preload" href="styles/normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/normalize.css"></noscript>
+    <link rel="preload" href="styles/mobile.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/mobile.css"></noscript>
+    <link rel="preload" href="styles/desktop.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/desktop.css"></noscript>
+    <!-- <link rel="stylesheet" href="styles/xtra-large.css"> -->
  
 
     <!-- external javascript -->
@@ -60,8 +63,8 @@
     </nav>        
     <main id="dicover-main">
         <h2 id="disc-h2">Discover Page</h2>
-        <section id="interest-container"> 
-        </section>
+        <div id="interest-container"> 
+        </div>
         <aside id="sidebar-content">
         </aside>        
     </main>
