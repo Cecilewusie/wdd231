@@ -1,4 +1,4 @@
-[
+export const interest = [
     {
         "name": "City Sports Complex",
         "address": "123 Sports Ave, Cityville",

@@ -711,19 +711,8 @@ form input[type=submit]:hover {
     text-align: center;
     font-size: 2rem;
     color: var(--background-color);
-    animation: slideInFromLeft 3s ease-in-out;
 }
 
-@keyframes slideInFromLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
 
 #interest-card {
     margin: 1rem 8px;
@@ -744,7 +733,7 @@ form input[type=submit]:hover {
 }
 
 #interest-card:hover {
-    transform: scale(1.02);
+    transform: scale(1.001);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 

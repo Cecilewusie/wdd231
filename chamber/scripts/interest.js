@@ -1,28 +1,19 @@
 import displayMembersInfo from '../../scripts/displayModule.js';
+import {interest} from '../data/interest.mjs';
 //displayMembersInfo takes an array, a template and a container to work
 
 const interestCard = document.querySelector("#interest-container")
-async function fetchInterestInfo() {
-    try {
-        const response = await fetch('data/interest.json');
-        if (response.ok) {
-            const data = await response.json();
-            displayMembersInfo(data, interestTemplate, interestCard);
-        } else {
-            console.error('Failed to fetch data:', response.statusText);
-        }
-    } catch (error) {
-        console.error('Error fetching data:', error);
-    }
+function displayInterestInfo() {
+    displayMembersInfo(interest, interestTemplate, interestCard);
 }
 
-fetchInterestInfo();
+displayInterestInfo();
 
 function interestTemplate(interest) {
     return `
         <div id="interest-card">
             <figure>
-                <img src="${interest.photo}" alt="${interest.name}" width="300" height="200">
+                <img src="${interest.photo}" alt="${interest.name}" width="300" height="200" loading="lazy">
             </figure>
             <h2>${interest.name}</h2>
             <address>${interest.address}</address>
