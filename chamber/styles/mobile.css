@@ -757,6 +757,7 @@ form input[type=submit]:hover {
 
 #interest-container #interest-card img {
     width: 100%;
+    height: auto;
     grid-area: image;
     border-bottom: 1px solid #ddd;
     object-fit: cover;
