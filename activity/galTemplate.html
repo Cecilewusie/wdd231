@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blacq Shot Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background: #1e1e1e;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav button {
+            background: #ff9800;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        nav button:hover {
+            background: #e68900;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 5px;
+        }
+        .modal.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blacq Shot Gallery</h1>
+        <nav>
+            <button data-filter="all">All</button>
+            <button data-filter="photography">Photography</button>
+            <button data-filter="videography">Videography</button>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="gallery" class="gallery"></section>
+    </main>
+    
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img id="modal-img" src="" alt="Preview">
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const gallery = document.getElementById("gallery");
+            const modal = document.getElementById("modal");
+            const modalImg = document.getElementById("modal-img");
+            const closeModal = document.querySelector(".close");
+
+            const images = [
+                { src: "image1.jpg", category: "photography" },
+                { src: "image2.jpg", category: "videography" },
+                { src: "image3.jpg", category: "photography" },
+                { src: "image4.jpg", category: "videography" }
+            ];
+
+            function renderGallery(filter = "all") {
+                gallery.innerHTML = "";
+                images.filter(img => filter === "all" || img.category === filter).forEach(img => {
+                    const imgElement = document.createElement("img");
+                    imgElement.src = img.src;
+                    imgElement.alt = "Gallery Image";
+                    imgElement.dataset.category = img.category;
+                    imgElement.addEventListener("click", () => {
+                        modal.classList.add("show");
+                        modalImg.src = img.src;
+                    });
+                    gallery.appendChild(imgElement);
+                });
+            }
+
+            document.querySelectorAll("nav button").forEach(button => {
+                button.addEventListener("click", () => {
+                    renderGallery(button.dataset.filter);
+                });
+            });
+
+            closeModal.addEventListener("click", () => {
+                modal.classList.remove("show");
+            });
+
+            renderGallery();
+        });
+    </script>
+</body>
+</html>

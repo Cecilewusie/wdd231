@@ -43,7 +43,6 @@ const membershipLevels = [
     }
 ];
 
-console.log(membershipLevels);
 const cardDiv = document.querySelector("#membership-level-card");
 
 function membershipTemplate(member) {

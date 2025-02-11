@@ -705,6 +705,133 @@ form input[type=submit]:hover {
     color: #0e0202;
 }
 
+/* ---STYLING THE DISCOVER PAGE---- */
+/* styling the interest card */
+#disc-h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--background-color);
+    animation: slideInFromLeft 3s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#interest-card {
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1em;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "image"
+    "paragraph"
+    "address"
+    "button";
+}
+
+#interest-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+#interest-container #interest-card h2 {
+    margin: 1rem 10px;
+    grid-area: title;
+    font-size: 1.5rem;
+    color: var(--background-color);
+}
+
+#interest-container #interest-card img {
+    width: 100%;
+    grid-area: image;
+    border-bottom: 1px solid #ddd;
+}
+
+#interest-container #interest-card p {
+    margin: 1rem 10px;
+    grid-area: paragraph;
+    line-height: 1.6;
+    color: #333;
+}
+
+#interest-container #interest-card address {
+    margin: 1rem 10px;
+    grid-area: address;
+    font-style: normal;
+    color: #666;
+}
+
+#interest-container #interest-card button {
+    padding: 0.5em;
+    grid-area: button;
+    background-color: var(--background-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#interest-container #interest-card button:hover {
+    background-color: #444;
+}
+
+/* styling the aside or sidebar content */
+
+#sidebar-content {
+    background-color: #0c454d;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: #333;
+}
+
+#sidebar-content h2 {
+    font-size: 1.5rem;
+    color: var(--background-color);
+    margin-bottom: 1rem;
+}
+
+#sidebar-content p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+#sidebar-content a {
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#sidebar-content a:hover {
+    text-decoration: underline;
+}
+/* Visitor message styles */
+#visitor-message {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
 /* Footer styles */
 footer {
     background: var(--background-color);

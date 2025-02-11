@@ -134,6 +134,19 @@
         padding: 2rem;
     }    
 
+    /* -----STYLING THE DISCOVER PAGE----- */
+     #interest-card {
+        grid-template-areas: 
+        "title title"
+        "image paragraph"
+        "image address"
+        "button button";
+    }
+
+    #interest-container #interest-card img {
+        width: 300px;
+    }    
+
     footer {
         display: flex;
         justify-content: space-around;
