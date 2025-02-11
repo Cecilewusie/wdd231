@@ -841,6 +841,8 @@ footer {
     text-align: center;
     padding: 1rem 0;
     width: 100%;
+    min-height: 150px;
+    position: relative;
 }
 
 footer .social-media ul {
@@ -855,6 +857,7 @@ footer .social-media ul {
 
 footer .social-media ul li img {
     object-fit: cover;
+    min-height: 50px;
 }
 
 .last-modified {
