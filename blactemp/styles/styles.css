@@ -101,7 +101,7 @@ header {
     background: none;
     border: none;
     font-size: 2rem;
-    color: var(--text-color);
+    color: var(--background-color);
     cursor: pointer;
 }
 
@@ -132,6 +132,8 @@ header {
 
 .menuLinks {
     position: absolute;
+    top: 60px;
+    right: 0;
     width: 100%;
     background: var(--bg-color);
     text-align: center;
