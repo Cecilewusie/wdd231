@@ -4,44 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Blacq Shot - Contact">
-    <link rel="icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="styles/styles.css">
     <title>Blacq Shot | Contact</title>
+
+    <!-- fave icon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- adding open graph meta tags -->
+    <meta property="og:title" content="Blacq Shot Gallery">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cecilewusie.github.io/wdd231/blacktemp/images/market.webp">
+    <meta property="og:url" content="https://cecilewusie.github.io/wdd231/blacktemp/index.html">
+    <meta property="og:description" content="Blacq Shot Portfolio and Gallery">
+
+    <!-- adding twitter(X) open graph meta tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Blacq Shot Gallery">
+    <meta name="site" content="@CEwusie89514">
+    <meta name="twitter:description" content="Blacq Shot Portfolio and Gallery">
+    <meta name="twitter:image" content="https://cecilewusie.github.io/wdd231/blacktemp/images/market.webp">
+
+    <!-- style sheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Blacq Shot</div>
-            <button class="menu-toggle" aria-label="Open Menu">☰</button>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html"><i class="bi bi-camera"></i></a>
+                    Blacq Shot
+                </div>
+                <button class="menu" aria-label="Open Menu" title="hamburger menu" type="button">
+                    <i class="bi bi-list"></i>
+                </button>
+                <ul class="menuLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="header-social-links">
+                  <a href="https://x.com/CEwusie89514"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.facebook.com/lux.ry.18"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/darl.white/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/cecil-ewusie-923366211/"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section class="contact">
-            <h1>Contact Us</h1>
-            <form action="form-action.html" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+    <main id="contact-mian">
+        <section class="collaborate">
+            <h3>Connect</h3>
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you! Whether you have questions,collaboration ideas, or feedback, reach out and let's start a conversation</p>
+        </section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+        <section class="means-of-reach">
+            <h3>Connect</h3>
+            <div class="info-wrap">
+                <div class="info-wrap-sub">
+      
+                  <div >
+                    <div class="info-item">
+                      <i class="bi bi-geo-alt"></i>
+                      <div>
+                        <h3>Location</h3>
+                        <p>Mutarazi Steet 11, Accra, Ghana</p>
+                      </div>
+                    </div>
+                  </div><!-- End Info Item -->
+      
+                  <div>
+                    <div class="info-item">
+                      <i class="bi bi-telephone"></i>
+                      <div>
+                        <h3>Call</h3>
+                        <p><a href="tel:+233550682513">>> Our Phone</a></p>
+                      </div>
+                    </div>
+                  </div><!-- End Info Item -->
+      
+                  <div>
+                    <div class="info-item">
+                      <i class="bi bi-envelope"></i>
+                      <div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:hendrixcecil0@gmail.com">>> hendrixcecil0@gmail.com</a></p>
+                      </div>
+                    </div>
+                  </div><!-- End Info Item -->
+      
+                </div>
+            </div>            
+        </section>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+        <!-- contact form -->
+        <section class="contact-form">
+            <form action="thankyou.html" method="GET">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Cecil Ewusie" required>
 
-                <button type="submit">Send Message</button>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="hendrix4@gmail.com" required>
+
+              <label for="inquiry">Inquiry Type:</label>
+              <select id="inquiry" name="inquiry" required>
+                <option value="questions">Questions</option>
+                <option value="collaboration_ideas">Collaboration Ideas</option>
+                <option value="feedback">Feedback</option>
+              </select>              
+
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+
+              <fieldset>
+                <legend>How did you hear about us?</legend>
+                <label><input type="radio" name="referral" value="friend">Friend Referral</label>
+                <label><input type="radio" name="referral" value="social_media">Social Media</label>
+                <label><input type="radio" name="referral" value="online_search">Online Search</label>
+                <label><input type="radio" name="referral" value="event_attendee">Event Attendee</label>
+                <label><input type="radio" name="referral" value="other_sources">Other Sources</label>
+              </fieldset>
+              
+              <input type="hidden" name="timestamp" id="timestamp" value="">
+
+              <input type="submit" value="send a message">
+              
+              <script>
+                document.getElementById('timestamp').value = new Date().toISOString();
+              </script>
+
             </form>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Blacq Shot. All rights reserved.</p>
-        <a href="attributions.html">Attributions</a>
+        <div class="social-links d-flex justify-content-center">
+            <a href="https://x.com/CEwusie89514"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/lux.ry.18"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/darl.white/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/cecil-ewusie-923366211/"><i class="bi bi-linkedin"></i></a>
+          </div>        
+          <p class="designer">Designed by <span class="firstname">Cecil</span> <span class="lastname">Ewusie</span></p>
     </footer>
+
+    <!-- scripts -->
+    <script src="scripts/hamburger.js" defer></script>    
+
 </body>
 </html>

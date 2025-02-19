@@ -4,40 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Blacq Shot - Photography & Videography Gallery">
-    <link rel="icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="styles/styles.css">
     <title>Blacq Shot | Home</title>
+
+    <!-- fave icon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- adding open graph meta tags -->
+    <meta property="og:title" content="Blacq Shot Gallery">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cecilewusie.github.io/wdd231/blacktemp/images/market.webp">
+    <meta property="og:url" content="https://cecilewusie.github.io/wdd231/blacktemp/index.html">
+    <meta property="og:description" content="Blacq Shot Portfolio and Gallery">
+
+    <!-- adding twitter(X) open graph meta tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Blacq Shot Gallery">
+    <meta name="site" content="@CEwusie89514">
+    <meta name="twitter:description" content="Blacq Shot Portfolio and Gallery">
+    <meta name="twitter:image" content="https://cecilewusie.github.io/wdd231/blacktemp/images/market.webp">
+
+    <!-- style sheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/lightbox.min.css">
+
+    <script src="scripts/lightbox-plus-jquery.min.js" defer></script>    
+    
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Blacq Shot</div>
-            <button class="menu-toggle" aria-label="Open Menu">☰</button>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html"><i class="bi bi-camera"></i></a>
+                    Blacq Shot
+                </div>
+                <button class="menu" aria-label="Open Menu" title="hamburger menu" type="button">
+                    <i class="bi bi-list"></i>
+                </button>
+                <ul class="menuLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="header-social-links">
+                    <a href="https://x.com/CEwusie89514"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.facebook.com/lux.ry.18"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/darl.white/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/cecil-ewusie-923366211/"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
+        <!-- hero information -->
         <section class="hero">
-            <h1>Capture Moments, Tell Stories</h1>
+            <h1>Chale capture Life's Moments with Blacq Shot</h1>
             <p>Explore stunning photography and dynamic videography.</p>
         </section>
+   
+        <!-- introductin -->
+        <section class="intro">
+            <div class="intro-info">
+                <h2>Crafting Visual Stories Through Every Lens</h2>
+                <p>At Blacq Shot, I believe in the power of storytelling through imagery. My unique approach combines creativity and technical skill to deliver stunning visuals that resonate.</p>
+            </div>
+            <div class="btns">
+                <a href="gallery.html"><button id="left">Explore</button></a>
+                <a href="contact.html"><button id="right">Contact</button></a>
+            </div>
+        </section>
 
+        <section class="recently-viewed">
+            <h2>Recently Viewed</h2>
+            <div id="recently-viewed-container"></div>
+        </section>     
+
+        <!-- displaying 3D card -->
         <section class="featured">
             <h2>Featured Works</h2>
-            <div id="featured-gallery"></div>
+            <div id="featured-gallery">
+                <div class="banner">
+                    <div class="slider" style="--quantity: 10">
+                        <div class="item" style="--position: 1"><img src="gallery/gal1.webp" alt="spinner one" loading="lazy"></div>
+                        <div class="item" style="--position: 2"><img src="gallery/gal10.webp" alt="spinner two" loading="lazy"></div>
+                        <div class="item" style="--position: 3"><img src="gallery/gal11.webp" alt="spinner three" loading="lazy"></div>
+                        <div class="item" style="--position: 4"><img src="gallery/gal12.webp" alt="spinner four" loading="lazy"></div>
+                        <div class="item" style="--position: 5"><img src="gallery/gal13.webp" alt="spinner five" loading="lazy"></div>
+                        <div class="item" style="--position: 6"><img src="gallery/gal14.webp" alt="spinner six" loading="lazy"></div>
+                        <div class="item" style="--position: 7"><img src="gallery/gal15.webp" alt="spinner seven" loading="lazy"></div>
+                        <div class="item" style="--position: 8"><img src="gallery/gal3.webp" alt="spinner eight" loading="lazy"></div>
+                        <div class="item" style="--position: 9"><img src="gallery/gal4.webp" alt="spinner nine" loading="lazy"></div>
+                        <div class="item" style="--position: 10"><img src="gallery/gal6.webp" alt="spinner ten" loading="lazy"></div>
+                    </div>
+                    <div class="content">
+                        <div class="model"></div>
+                    </div>
+                </div>             
+            </div>
         </section>
+        
+        <section class="homepage-explore">
+            <h2>Explore Our Exceptional Photography and Videography Services Tailored for you</h2>
+            <div class="homepage-service-container">
+                <div class="homepage-service-card">
+                    <i class="bi bi-camera"></i>
+                    <h3>Capture Life's Moments with Our Professional Photography and Videography Solutions</h3>
+                    <p>At Blacq Shot, we offer a wide range of services to meet your visual storytelling</p>
+                    <a href="service.html"><button>Learn More ></button></a>
+                </div>
+                <div class="homepage-service-card">
+                    <i class="bi bi-camera"></i>
+                    <h3>Tailored Packages for Every Occasion: Weddings, Graduation and More</h3>
+                    <p>Our customizable packages ensure that every special moments is beautifully captured.</p>
+                    <a href="service.html"><button>Learn More ></button></a>
+                </div>
+                <div class="homepage-service-card">
+                    <i class="bi bi-camera"></i>
+                    <h3>Professional Video Services to Bring Your Vision to Life</h3>
+                    <p>From promotional videos to personal projects, we deliver high-quality videography</p>
+                    <a href="service.html"><button>Learn More ></button></a>
+                </div>
+            </div>
+        </section>        
     </main>
 
     <footer>
         <p>&copy; 2025 Blacq Shot. All rights reserved.</p>
-        <a href="attributions.html">Attributions</a>
+        <div class="social-links d-flex justify-content-center">
+            <a href="https://x.com/CEwusie89514"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/lux.ry.18"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/darl.white/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/cecil-ewusie-923366211/"><i class="bi bi-linkedin"></i></a>
+          </div>        
+          <p class="designer">Designed by <span class="firstname">Cecil</span> <span class="lastname">Ewusie</span></p>
     </footer>
 
-    <script type="module" src="scripts/main.js"></script>
+    <!-- scripts -->
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/recentlyViewed.js" defer></script>
+
 </body>
 </html>
