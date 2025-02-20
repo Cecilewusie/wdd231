@@ -867,7 +867,6 @@ select:focus {
     max-width: 500px;
     width: 90%;
     margin: auto;
-    position: relative;
     animation: fadeIn 0.5s ease-in-out;
 }
 
