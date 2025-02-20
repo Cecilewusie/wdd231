@@ -900,7 +900,7 @@ select:focus {
     outline: none;
 }
 
-.booking-dialog input[type=submit] {
+.booking-dialog form input[type=submit]:focus {
     outline: none;
 }
 
