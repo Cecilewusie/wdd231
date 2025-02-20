@@ -863,37 +863,61 @@ select:focus {
     border: none;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    padding: 2rem;
+    padding: 0 0 2rem 0;
     max-width: 500px;
     width: 90%;
     margin: auto;
     animation: fadeIn 0.5s ease-in-out;
 }
 
+.booking-dialog form {
+    padding: 2rem;
+}
+
+
 /* Backdrop for modal pop up */
 ::backdrop {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     animation: fadeIn 0.5s ease-in-out;
 }
 
-.price-dialog .close-button, .booking-dialog #closeBook {
+.price-dialog .close-button, 
+.booking-dialog #closeBook {
     background: none;
     border: none;
     font-size: 2rem;
-    color: var(--highlight-color);
+    color: var(--bg-color);
     cursor: pointer;
     position: absolute;
-    top: 1rem;
+    top: 0.2rem;
     right: 1rem;
 }
 
+.price-dialog .close-button:focus, 
+.booking-dialog #closeBook:focus, 
+.price-dialog .close-button:hover, 
+.booking-dialog #closeBook:hover {
+    outline: none;
+}
+
+.booking-dialog input[type=submit] {
+    outline: none;
+}
+
 .price-dialog h1, .booking-dialog h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    background-color: var(--icons-or-header-text);
+    color: rgb(28, 27, 27);
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
 }
 
 .price-dialog p {
     font-size: 1.2rem;
+    padding: 2rem;
 }
 
 .booking-dialog .form-intro {
