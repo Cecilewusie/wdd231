@@ -9,7 +9,7 @@ function pricingTemplate(pricingOffers) {
               <div class="pricing-item">
                 <h3>${pricingOffers.eventType}</h3>
                 <h4>$${pricingOffers.price}</h4>
-                <div class="expand-offers"><i class="bi-arrows-angle-expand">click</i></div>
+                <div class="expand-offers"><i class="bi-arrows-angle-expand"></i></div>
               </div>
                 <a href="#referred"><button type="button">Book Us</button></a>
             </div><!-- End Pricing Item -->
