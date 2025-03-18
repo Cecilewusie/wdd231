@@ -4,9 +4,8 @@ import displayMembersInfo from "../../scripts/displayModule.js";
 // templates to use
 // price template
 function pricingTemplate(pricingOffers) {
-    const additionalClass = pricingOffers.eventType === "Wedding Photography" ? "wedding" : "";
     return `
-        <div class="pricing-and-offers ${additionalClass}">
+        <div class="pricing-and-offers ${pricingOffers.classToUse}">
             <div class="pricing-item">
                 <h3>${pricingOffers.eventType}</h3>
                 <div class="expand-offers"><i class="bi-arrows-angle-expand"></i></div>
