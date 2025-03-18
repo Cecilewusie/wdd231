@@ -1000,12 +1000,18 @@ select:focus {
     margin-bottom: 2rem;
     color: var(--secondary-color);
     position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform var(--transition-duration), box-shadow var(--transition-duration);
 }
 
-.overlay {
-    inset: 0;
+.package .overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
     background: rgba(0, 0, 0, 0.4);
     padding: 0.5rem;
     position: absolute;
@@ -1042,6 +1048,15 @@ select:focus {
     padding: 0;
     margin: 0;
 }
+
+.package h2,
+.package h3,
+.package p,
+.package ul {
+    position: relative; /* Ensure text is above the overlay */
+    z-index: 2; /* Place text above the overlay */
+}
+
 
 .package ul li {
     font-size: 1rem;
@@ -1084,6 +1099,14 @@ select:focus {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.sub-package h3,
+.sub-package h4,
+.sub-package ul {
+    position: relative;
+    z-index: 2;
+    line-height: 1.5;
 }
 
 .sub-package ul li {
