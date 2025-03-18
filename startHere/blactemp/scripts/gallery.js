@@ -26,11 +26,3 @@ function displayGallery() {
 }
 
 displayGallery();
-
-window.onload = function() {
-    let images = document.querySelectorAll("#gallery img");
-    images.forEach(img => {
-        img.style.objectFit = "cover";
-        img.style.height = `${Math.random() * 200 + 200}px`; // Random height between 200-400px
-    });
-};

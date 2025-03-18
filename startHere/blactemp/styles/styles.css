@@ -318,24 +318,6 @@ header {
     transform: scale(1.1);
 }
 
-/* masonry */
-#gallery {
-    column-count: 3;
-    column-gap: 15px;
-}
-
-.grid-item {
-    width: 100%;
-    break-inside: avoid;
-    margin-bottom: 10px;  
-}
-
-.grid-item img {
-    width: 100%;
-    display: block;
-    border-radius: 8px;
-}
-
 /* styling the recently viewed data */
 .recently-viewed {
     padding: 2rem;
@@ -874,7 +856,6 @@ select:focus {
     background-color: rgb(116, 43, 17);
 }
 
-
 /* Dialog Styles */
 .price-dialog, .booking-dialog {
     background-color: rgb(51, 51, 51);
@@ -899,7 +880,6 @@ select:focus {
     background-color: rgba(0, 0, 0, 0.8);
     animation: fadeIn 0.5s ease-in-out;
 }
-
 
 .price-dialog .close-button, 
 .booking-dialog #closeBook {
@@ -942,133 +922,6 @@ select:focus {
     font-size: 1.2rem;
     padding: 2rem;
 }
-
-
-/* styling the wedding */
-.wedding {
-    background-image: url('../images/mirrorback.jpg');
-    background-size: cover;
-    background-position: center;   
-}
-
-
-.pricing-item {
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 0.5rem;
-}
-
-.package {
-    background-image: url('../images/ring.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    margin-bottom: 2rem;
-    color: var(--secondary-color);
-    position: relative;
-    overflow: hidden;
-    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
-}
-
-.overlay {
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 0.5rem;
-    position: absolute;
-}
-
-.package:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.package h2 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-    color: var(--highlight-color);
-    font-weight: bold;
-}
-
-.package h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--icons-or-header-text);
-    font-weight: bold;
-}
-
-.package p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-    font-weight: bold;
-}
-
-.package ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.package ul li {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    padding-left: 1.5rem;
-    position: relative;
-    color: var(--secondary-color);
-}
-
-.package ul li::before {
-    content: '✔';
-    position: absolute;
-    left: 0;
-    color: var(--highlight-color);
-    font-size: 1.2rem;
-}
-
-.sub-package {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 1.5rem;
-    border-radius: var(--border-radius);
-    margin-top: 1.5rem;
-    color: var(--secondary-color);
-    box-shadow: var(--box-shadow);
-}
-
-.sub-package h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-    color: var(--highlight-color);
-}
-
-.sub-package h4 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: var(--icons-or-header-text);
-}
-
-.sub-package ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sub-package ul li {
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-    padding-left: 1.5rem;
-    position: relative;
-    color: var(--secondary-color);
-}
-
-.sub-package ul li::before {
-    content: '✔';
-    position: absolute;
-    left: 0;
-    color: var(--highlight-color);
-    font-size: 1rem;
-}
-
 
 .booking-dialog .form-intro {
     display: flex;
@@ -1328,11 +1181,6 @@ footer .social-links a {
         margin-right: auto;
     }
 
-    /* gallery masonry */
-    #gallery {
-        column-count: 4;
-    }    
-
 
     .menu {
         display: none;
@@ -1398,11 +1246,6 @@ footer .social-links a {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
-
-    /* masonry */
-    #gallery {
-        column-count: 5;
-    }    
 
     .menuLinks {
         gap: 4rem;    

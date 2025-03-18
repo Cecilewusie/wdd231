@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blacq Shot - thank you page">
-    <title>Blacq Shot | thank you page</title>
+    <meta name="description" content="Blacq Shot - Gallery">
+    <title>Blacq Shot | Gallery</title>
 
     <!-- fave icon -->
     <link rel="icon" href="favicon.ico">
@@ -23,9 +23,9 @@
     <meta name="twitter:description" content="Blacq Shot Portfolio and Gallery">
     <meta name="twitter:image" content="https://cecilewusie.github.io/wdd231/blacktemp/images/market.webp">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- styles sheet -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
-
 </head>
 <body>
     <header>
@@ -36,43 +36,47 @@
                     Blacq Shot
                 </div>
                 <button class="menu" aria-label="Open Menu" title="hamburger menu" type="button">
-                    <i class="bi bi-list"></i>
+                    <i class="bi-list">=</i>
                 </button>
                 <ul class="menuLinks">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="service.html">Service</a></li>
+                    <li><a href="service.html">Services</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <div class="header-social-links">
-                    <a href="https://x.com/CEwusie89514"><i class="bi bi-twitter-x"></i></a>
-                    <a href="https://www.facebook.com/lux.ry.18"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/darl.white/"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/cecil-ewusie-923366211/"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://x.com/CEwusie89514"><img src="images/twitter.webp" alt="twitter" width="30" height="30"></a>
+                    <a href="https://www.instagram.com/darl.white/"><img src="images/whatsapp.webp" alt="instagram icon" width="30" height="30"></a>
+                    <a href="https://www.linkedin.com/in/cecil-ewusie-923366211/"><img src="images/youtube.webp" alt="linkedin" width="30" height="30"></a>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="thank-you-main">
-        <section>
-            <h1>Form submitted succesfully</h1>
+
+    <main id="gallery-main">
+        <section class="gallery-intro">
+            <h1>Gallery</h1>
+            <p>A picture is worth a thousand words, but a Blacq Shot tells a story beyond words. Explore our gallery, where moments are frozen in time with precision, passion, and creativity. From breathtaking portraits to dynamic action shots, every frame is a work of art. Let these images inspire your next shoot—your story deserves to be captured beautifully.</p>
         </section>
-        <div id="results"></div>
+
+        <section>
+            <div id="media-gallery"></div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Blacq Shot. All rights reserved.</p>
         <div class="social-links">
-            <a href="https://x.com/CEwusie89514"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://www.facebook.com/lux.ry.18"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/darl.white/"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/cecil-ewusie-923366211/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com/CEwusie89514"><img src="images/twitter.webp" alt="twitter" width="30" height="30"></a>
+            <a href="https://www.instagram.com/darl.white/"><img src="images/whatsapp.webp" alt="instagram icon" width="30" height="30"></a>
+            <a href="https://www.linkedin.com/in/cecil-ewusie-923366211/"><img src="images/youtube.webp" alt="linkedin" width="30" height="30"></a>
           </div>        
-        <p class="designer">Designed by <span class="firstname">Cecil</span> <span class="lastname">Ewusie</span></p>
+          <p class="designer">Designed by <span class="firstname">Cecil</span> <span class="lastname">Ewusie</span></p>
     </footer>
 
+    <!-- scripts -->
     <script src="scripts/hamburger.js" defer></script>
-    <script src="scripts/thankyou.js" defer></script>
+    <script type="module" src="scripts/gallery.js" defer></script>
 
 </body>
 </html>
